@@ -1,0 +1,3936 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/Raunak%20Shaw/Documents/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="theme-color" content="#fff3f7">
+
+<title>Happy Birthday Shreya 💗</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+<link href="./Happy Birthday Shreya 💗_files/css2" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="./Happy Birthday Shreya 💗_files/saved_resource"></script>
+
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            fontFamily: {
+                poppins: ["Poppins", "sans-serif"],
+                playfair: ["Playfair Display", "serif"],
+                dancing: ["Dancing Script", "cursive"]
+            }
+        }
+    }
+}
+</script>
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --pink: #ed3970;
+    --pink-dark: #c92759;
+    --pink-soft: #ffb5ca;
+    --rose: #8b3049;
+    --gold: #d7a85c;
+    --cream: #fffafc;
+    --text: #59484e;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background: #fff3f7;
+    color: var(--text);
+}
+
+button {
+    font-family: inherit;
+    touch-action: manipulation;
+}
+
+button:focus-visible {
+    outline: 3px solid rgba(237,57,112,.35);
+    outline-offset: 4px;
+}
+
+/* =========================================================
+   APP
+========================================================= */
+
+#app {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+}
+
+.screen {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: scale(.985);
+
+    transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.16,1,.3,1),
+        visibility .7s;
+}
+
+.screen.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+/* =========================================================
+   PREMIUM BACKGROUND
+========================================================= */
+
+.premium-bg {
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(255,255,255,.98) 0%,
+            rgba(255,245,249,.88) 30%,
+            transparent 58%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(255,187,208,.18),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 65%,
+            rgba(230,170,190,.15),
+            transparent 32%
+        ),
+        linear-gradient(
+            180deg,
+            #fffdfd 0%,
+            #fff6f9 50%,
+            #ffeaf1 100%
+        );
+}
+
+.dark-premium-bg {
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(255,70,130,.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #18070d,
+            #290b17 50%,
+            #100308
+        );
+}
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+#particleLayer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .65;
+    }
+
+    90% {
+        opacity: .5;
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =========================================================
+   CONTENT WRAPPER
+========================================================= */
+
+.page-content {
+    position: relative;
+    z-index: 5;
+
+    min-height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding:
+        max(28px, env(safe-area-inset-top))
+        18px
+        max(35px, env(safe-area-inset-bottom));
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.script-title {
+    font-family: "Dancing Script", cursive;
+    color: var(--pink);
+    font-weight: 600;
+}
+
+.serif-title {
+    font-family: "Playfair Display", serif;
+    color: var(--rose);
+}
+
+.subtitle {
+    font-family: "Dancing Script", cursive;
+    color: #8c6671;
+}
+
+/* =========================================================
+   OPENING SCREEN
+========================================================= */
+
+#screen1 .page-content {
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.intro-small {
+    font-family: "Dancing Script", cursive;
+    color: #a46d7d;
+    font-size: clamp(19px, 5vw, 25px);
+    margin-bottom: 4px;
+    animation: fadeUp .8s ease both;
+}
+
+.main-title {
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(54px, 15vw, 105px);
+    line-height: .95;
+    font-weight: 600;
+    color: var(--pink);
+    text-shadow:
+        0 8px 30px rgba(237,57,112,.13);
+    animation:
+        titleReveal 1s
+        cubic-bezier(.16,1,.3,1)
+        both;
+}
+
+.main-title span {
+    display: block;
+}
+
+.heart-glow {
+    display: inline-block;
+    margin-left: 7px;
+    animation: heartbeat 1.7s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.14);
+    }
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0;
+        transform:
+            translateY(25px)
+            scale(.95);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   CAKE
+========================================================= */
+
+.cake-wrap {
+    position: relative;
+
+    width: 190px;
+    height: 190px;
+
+    margin:
+        25px auto 20px;
+
+    animation:
+        cakeFloat 3.2s
+        ease-in-out
+        infinite;
+}
+
+@keyframes cakeFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.cake-shadow {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    width: 170px;
+    height: 22px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: rgba(160,65,90,.12);
+    filter: blur(7px);
+}
+
+.cake-bottom {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: 25px;
+    height: 62px;
+    border-radius:
+        12px 12px 22px 22px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f98ead,
+            #ed628d
+        );
+
+    box-shadow:
+        inset 0 -9px 0 rgba(174,39,80,.16),
+        0 12px 25px rgba(180,60,90,.18);
+}
+
+.cake-middle {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 73px;
+    height: 55px;
+    border-radius: 12px 12px 16px 16px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffd3df,
+            #ffabc4
+        );
+
+    box-shadow:
+        inset 0 -7px 0 rgba(215,92,130,.13);
+}
+
+.cake-top {
+    position: absolute;
+    left: 43px;
+    right: 43px;
+    bottom: 120px;
+    height: 42px;
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff0f5,
+            #ffc0d3
+        );
+
+    box-shadow:
+        0 7px 12px rgba(180,70,100,.12);
+}
+
+.cake-cream {
+    position: absolute;
+    left: 39px;
+    right: 39px;
+    bottom: 112px;
+    height: 20px;
+    border-radius: 50%;
+
+    background: #fff5f8;
+    box-shadow:
+        0 3px 0 rgba(210,80,120,.12);
+}
+
+.candle {
+    position: absolute;
+    bottom: 152px;
+    width: 12px;
+    height: 43px;
+    border-radius: 6px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #fff,
+            #fff 7px,
+            #ef5f88 7px,
+            #ef5f88 12px
+        );
+
+    box-shadow:
+        0 5px 15px rgba(230,65,110,.18);
+}
+
+.candle.c1 {
+    left: 82px;
+}
+
+.candle.c2 {
+    left: 101px;
+    height: 49px;
+}
+
+.flame {
+    position: absolute;
+    bottom: 197px;
+    left: 50%;
+    width: 15px;
+    height: 23px;
+
+    transform:
+        translateX(-50%)
+        rotate(45deg);
+
+    border-radius:
+        50% 0 50% 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7a8,
+            #ffad33
+        );
+
+    box-shadow:
+        0 0 15px #ffc04d,
+        0 0 30px rgba(255,170,50,.55);
+
+    animation:
+        flame 1s ease-in-out infinite alternate;
+}
+
+@keyframes flame {
+    from {
+        transform:
+            translateX(-50%)
+            rotate(45deg)
+            scale(.9);
+    }
+
+    to {
+        transform:
+            translateX(-50%)
+            rotate(45deg)
+            scale(1.08);
+    }
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.intro-message {
+    max-width: 480px;
+    margin: 5px auto 25px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(16px, 4.2vw, 20px);
+    line-height: 1.7;
+    color: #78646b;
+}
+
+.intro-question {
+    margin-bottom: 22px;
+
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(25px, 6vw, 33px);
+    color: #9b586c;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.premium-button {
+    position: relative;
+
+    min-width: 145px;
+    min-height: 58px;
+
+    border: none;
+    border-radius: 999px;
+
+    padding:
+        0 25px;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f52f6a,
+            #df285e
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(225,45,100,.25);
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.premium-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 20px 45px
+        rgba(225,45,100,.34);
+}
+
+.premium-button:active {
+    transform: scale(.96);
+}
+
+.secondary-button {
+    min-width: 145px;
+    min-height: 58px;
+
+    border-radius: 999px;
+
+    border:
+        1px solid
+        rgba(220,120,150,.25);
+
+    background:
+        rgba(255,255,255,.88);
+
+    color: #d52c61;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    box-shadow:
+        0 12px 30px
+        rgba(160,70,100,.08);
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease;
+}
+
+/* =========================================================
+   NO BUTTON
+========================================================= */
+
+#noButton {
+    position: relative;
+    z-index: 30;
+    transition:
+        left .22s ease,
+        top .22s ease,
+        transform .22s ease;
+}
+
+.no-message {
+    min-height: 28px;
+    margin-top: 12px;
+
+    font-family: "Dancing Script", cursive;
+    font-size: 21px;
+    color: #d33b69;
+
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.no-message.show {
+    opacity: 1;
+}
+
+/* =========================================================
+   BALLOON SCREEN
+========================================================= */
+
+.section-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(40px, 10vw, 64px);
+    line-height: 1.05;
+    color: var(--pink);
+}
+
+.section-subtitle {
+    max-width: 470px;
+
+    text-align: center;
+
+    margin:
+        0 auto 28px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(15px, 4vw, 19px);
+
+    line-height: 1.6;
+
+    color: #80636c;
+}
+
+.balloon-grid {
+    width: 100%;
+    max-width: 430px;
+
+    margin:
+        5px auto 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        42px 38px;
+
+    padding:
+        20px 18px;
+}
+
+.balloon-box {
+    position: relative;
+
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balloon {
+    position: relative;
+
+    width: 112px;
+    height: 145px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    cursor: pointer;
+
+    box-shadow:
+        inset -18px -18px 35px
+        rgba(0,0,0,.10),
+        inset 18px 12px 25px
+        rgba(255,255,255,.35),
+        0 16px 28px
+        rgba(100,60,80,.10);
+
+    transition:
+        transform .25s ease,
+        opacity .4s ease;
+}
+
+.balloon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+    height: 38px;
+
+    left: 21px;
+    top: 18px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.45);
+
+    transform: rotate(20deg);
+
+    filter: blur(1px);
+}
+
+.balloon::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -13px;
+
+    transform:
+        translateX(-50%);
+
+    width: 14px;
+    height: 14px;
+
+    clip-path:
+        polygon(
+            50% 100%,
+            0 0,
+            100% 0
+        );
+
+    background: inherit;
+}
+
+.balloon-string {
+    position: absolute;
+
+    width: 1px;
+    height: 50px;
+
+    left: 50%;
+    bottom: -62px;
+
+    background:
+        currentColor;
+
+    opacity: .55;
+
+    transform:
+        rotate(5deg);
+}
+
+.blue {
+    background:
+        linear-gradient(
+            145deg,
+            #a8dcff,
+            #4da6e9
+        );
+    color: #4da6e9;
+}
+
+.pink {
+    background:
+        linear-gradient(
+            145deg,
+            #ffd1df,
+            #eb80a6
+        );
+    color: #e7789e;
+}
+
+.green {
+    background:
+        linear-gradient(
+            145deg,
+            #c9f0d5,
+            #75c993
+        );
+    color: #75c993;
+}
+
+.purple {
+    background:
+        linear-gradient(
+            145deg,
+            #d8c8ff,
+            #9275d9
+        );
+    color: #9275d9;
+}
+
+.balloon.disabled {
+    filter: grayscale(.2);
+    opacity: .45;
+}
+
+.balloon.popped {
+    animation: balloonPop .5s ease forwards;
+}
+
+@keyframes balloonPop {
+    0% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.balloon-word {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%)
+        scale(.7);
+
+    opacity: 0;
+
+    white-space: nowrap;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(28px, 7vw, 42px);
+
+    font-weight: 600;
+
+    color: var(--pink);
+
+    pointer-events: none;
+
+    transition:
+        opacity .5s ease,
+        transform .5s
+        cubic-bezier(.16,1,.3,1);
+}
+
+.balloon-word.show {
+    opacity: 1;
+    transform:
+        translate(-50%,-50%)
+        scale(1);
+}
+
+.balloon-result {
+    min-height: 55px;
+
+    text-align: center;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(25px, 6vw, 34px);
+
+    color: #d12e61;
+}
+
+/* =========================================================
+   WISH SCREEN
+========================================================= */
+
+.wish-area {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.wish-title {
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(43px, 11vw, 72px);
+
+    color: var(--pink);
+
+    line-height: 1.05;
+
+    margin-bottom: 10px;
+}
+
+.wish-subtitle {
+    max-width: 480px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style: italic;
+
+    font-size:
+        clamp(16px, 4.5vw, 21px);
+
+    line-height: 1.6;
+
+    color: #89636f;
+
+    margin-bottom: 20px;
+}
+
+.big-cake {
+    transform:
+        scale(1.15);
+
+    margin:
+        5px auto 10px;
+}
+
+.continue-button {
+    min-width: 190px;
+    height: 60px;
+
+    border: none;
+    border-radius: 999px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f52b68,
+            #df285e
+        );
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 35px
+        rgba(225,45,100,.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.continue-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 20px 45px
+        rgba(225,45,100,.34);
+}
+
+/* =========================================================
+   REASONS
+========================================================= */
+
+.reasons-wrap {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.reason-icons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    max-width: 420px;
+
+    margin:
+        20px auto 24px;
+}
+
+.reason-icon {
+    width: 62px;
+    height: 62px;
+
+    margin: auto;
+
+    border: 1px solid
+        rgba(225,150,175,.15);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.9);
+
+    box-shadow:
+        0 10px 28px
+        rgba(190,65,105,.10);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.reason-icon:hover {
+    transform: translateY(-5px);
+}
+
+.reason-icon.selected {
+    transform: translateY(-5px);
+
+    background:
+        #fff;
+
+    box-shadow:
+        0 15px 35px
+        rgba(235,50,105,.20);
+}
+
+.reason-card {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 240px;
+
+    padding:
+        34px 25px 30px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.88);
+
+    border:
+        1px solid
+        rgba(220,170,185,.22);
+
+    box-shadow:
+        0 25px 60px
+        rgba(145,60,90,.10);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    overflow: hidden;
+}
+
+.reason-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -40px;
+    top: -40px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,190,210,.16);
+}
+
+.reason-card h3 {
+    position: relative;
+
+    margin: 0 0 16px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(30px, 7vw, 42px);
+
+    color: #49343b;
+}
+
+.reason-card p {
+    position: relative;
+
+    margin: 0;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(21px, 5.2vw, 28px);
+
+    line-height: 1.65;
+
+    color: #62535a;
+}
+
+.reason-change {
+    animation:
+        reasonIn .5s
+        cubic-bezier(.16,1,.3,1);
+}
+
+@keyframes reasonIn {
+    from {
+        opacity: 0;
+        transform:
+            translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+.bouquet {
+    margin:
+        25px auto 10px;
+
+    font-size:
+        clamp(70px, 18vw, 120px);
+
+    filter:
+        drop-shadow(
+            0 12px 18px
+            rgba(160,60,90,.12)
+        );
+
+    animation:
+        bouquetFloat 3s ease-in-out infinite;
+}
+
+@keyframes bouquetFloat {
+    0%,100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+}
+
+.reasons-continue {
+    margin:
+        10px auto 35px;
+}
+
+/* =========================================================
+   ENVELOPE
+========================================================= */
+
+.letter-intro {
+    justify-content: center;
+    text-align: center;
+}
+
+.letter-title {
+    max-width: 560px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style: italic;
+
+    font-size:
+        clamp(34px, 8vw, 56px);
+
+    line-height: 1.2;
+
+    color: #692b3c;
+
+    margin-bottom: 50px;
+}
+
+.envelope {
+    position: relative;
+
+    width:
+        min(88vw, 470px);
+
+    aspect-ratio:
+        1.5 / 1;
+
+    cursor: pointer;
+
+    perspective: 1000px;
+
+    filter:
+        drop-shadow(
+            0 25px 35px
+            rgba(180,70,100,.13)
+        );
+
+    transition:
+        transform .3s ease;
+}
+
+.envelope:hover {
+    transform: translateY(-5px);
+}
+
+.envelope-back {
+    position: absolute;
+    inset: 0;
+
+    border-radius:
+        7px 7px 18px 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffafb,
+            #ffe2eb
+        );
+
+    border:
+        2px solid
+        rgba(225,160,180,.48);
+}
+
+.envelope-back::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 9px;
+
+    border:
+        1px solid
+        rgba(215,170,90,.42);
+
+    border-radius:
+        4px 4px 13px 13px;
+}
+
+.envelope-paper {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 8%;
+
+    height: 78%;
+
+    background:
+        #fff;
+
+    border-radius:
+        5px 5px 12px 12px;
+
+    z-index: 2;
+}
+
+.envelope-flap {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 73%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8b3c9,
+            #ef91b2
+        );
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            50% 100%
+        );
+
+    transform-origin:
+        top center;
+
+    z-index: 5;
+
+    transition:
+        transform 1s
+        cubic-bezier(.16,1,.3,1);
+}
+
+.envelope-heart {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f52c68,
+            #df255b
+        );
+
+    color: white;
+
+    font-size: 27px;
+
+    z-index: 10;
+
+    box-shadow:
+        0 10px 25px
+        rgba(220,40,90,.25);
+
+    transition:
+        opacity .5s ease,
+        transform .6s ease;
+}
+
+.envelope.open .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+.envelope.open .envelope-heart {
+    opacity: 0;
+
+    transform:
+        translate(-50%,-50%)
+        scale(.5);
+}
+
+.tap-open {
+    margin-top: 48px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #8b7b80;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.tap-open:hover {
+    color: var(--pink);
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter-screen-bg {
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(255,255,255,.98),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #fffafb,
+            #ffeef4
+        );
+}
+
+.letter-page {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding:
+        22px 14px
+        max(45px, env(safe-area-inset-bottom));
+
+    text-align: center;
+}
+
+.letter-page-title {
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style: italic;
+
+    font-size:
+        clamp(31px, 8vw, 52px);
+
+    line-height: 1.2;
+
+    color: #692b3c;
+
+    margin:
+        0 auto 28px;
+}
+
+.letter-envelope-mini {
+    position: absolute;
+
+    left: 50%;
+
+    top: 160px;
+
+    width:
+        min(88vw, 470px);
+
+    height:
+        min(310px, 60vw);
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff9fa,
+            #ffe1eb
+        );
+
+    border:
+        2px solid
+        rgba(226,160,180,.45);
+
+    box-shadow:
+        0 25px 55px
+        rgba(180,60,100,.12);
+
+    transition:
+        transform 1s
+        cubic-bezier(.16,1,.3,1),
+        opacity .7s ease;
+}
+
+.mini-flap {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 65%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8b3c9,
+            #ef91b2
+        );
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            50% 100%
+        );
+
+    transform-origin: top center;
+
+    transition:
+        transform 1s
+        cubic-bezier(.16,1,.3,1);
+
+    z-index: 5;
+}
+
+.mini-heart {
+    position: absolute;
+
+    left: 50%;
+    top: 48%;
+
+    transform:
+        translate(-50%,-50%);
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f52c68,
+            #df255b
+        );
+
+    color: white;
+
+    font-size: 25px;
+
+    z-index: 10;
+
+    transition:
+        opacity .5s ease,
+        transform .7s ease;
+}
+
+.letter-paper {
+    position: relative;
+
+    z-index: 20;
+
+    width:
+        min(94vw, 580px);
+
+    margin:
+        65px auto 0;
+
+    padding:
+        45px 28px 50px;
+
+    text-align: left;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff,
+            #fffdfd
+        );
+
+    border:
+        1px solid
+        rgba(220,170,185,.23);
+
+    box-shadow:
+        0 25px 70px
+        rgba(130,50,80,.12);
+
+    opacity: 0;
+
+    transform:
+        translateY(190px)
+        scale(.82);
+
+    transition:
+        transform 1.2s
+        cubic-bezier(.16,1,.3,1),
+        opacity .8s ease;
+}
+
+.letter-opened .letter-paper {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+.letter-opened .letter-envelope-mini {
+    opacity: .12;
+
+    transform:
+        translateX(-50%)
+        translateY(-120px)
+        scale(.82);
+}
+
+.letter-opened .mini-flap {
+    transform:
+        rotateX(180deg);
+}
+
+.letter-opened .mini-heart {
+    opacity: 0;
+}
+
+.letter-seal {
+    position: absolute;
+
+    right: 17px;
+    top: 15px;
+
+    width: 57px;
+    height: 57px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f52c68,
+            #df255b
+        );
+
+    color: white;
+
+    font-size: 24px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(220,40,90,.22);
+
+    animation:
+        sealFloat 3s ease-in-out infinite;
+}
+
+@keyframes sealFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.letter-writing {
+    padding-top: 7px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    color: #51474b;
+
+    font-size:
+        clamp(20px, 5.2vw, 28px);
+
+    line-height: 1.75;
+}
+
+.letter-line {
+    margin:
+        0 0 30px;
+
+    min-height: 1em;
+}
+
+.letter-line.greeting {
+    font-size:
+        clamp(23px, 5.7vw, 31px);
+
+    margin-bottom: 42px;
+}
+
+.letter-line.birthday {
+    color: #d62e63;
+
+    font-size:
+        clamp(25px, 6vw, 34px);
+
+    margin-bottom: 42px;
+}
+
+.final-line {
+    color: #c82e61;
+}
+
+.signature {
+    margin-top: 42px;
+
+    text-align: right;
+
+    color: #c52f62;
+}
+
+.typing-cursor {
+    color: var(--pink);
+
+    animation:
+        cursorBlink .7s infinite;
+}
+
+@keyframes cursorBlink {
+    0%,49% {
+        opacity: 1;
+    }
+
+    50%,100% {
+        opacity: 0;
+    }
+}
+
+.typing-cursor.finished {
+    opacity: 0;
+}
+
+.letter-continue {
+    display: block;
+
+    margin:
+        25px auto 10px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateY(20px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease,
+        visibility .7s;
+}
+
+.letter-continue.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   FINAL SCREEN
+========================================================= */
+
+.final-screen {
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            rgba(255,255,255,.98),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #fffafd,
+            #ffe8f1
+        );
+}
+
+.final-content {
+    width: 100%;
+    max-width: 540px;
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding:
+        35px 20px;
+}
+
+.final-sparkles {
+    font-size: 25px;
+    letter-spacing: 8px;
+
+    animation:
+        sparkleFloat 2.5s
+        ease-in-out infinite;
+}
+
+.final-heart {
+    width: 110px;
+    height: 110px;
+
+    margin:
+        20px auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ff4d80,
+            #df2861
+        );
+
+    font-size: 48px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(225,45,100,.25);
+
+    animation:
+        heartbeat 1.8s
+        ease-in-out infinite;
+}
+
+.final-content h1 {
+    margin: 0;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(54px, 14vw, 82px);
+
+    line-height: .95;
+
+    color: #d92d62;
+}
+
+.final-message {
+    max-width: 480px;
+
+    margin:
+        25px auto 10px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(21px, 5.2vw, 29px);
+
+    line-height: 1.5;
+
+    color: #66545b;
+}
+
+.final-small {
+    margin-top: 12px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 24px;
+
+    color: #c45a78;
+}
+
+.final-divider {
+    margin:
+        22px auto;
+
+    color: #e33c70;
+
+    font-size: 28px;
+}
+
+.replay-button {
+    min-width: 230px;
+    min-height: 60px;
+
+    border: none;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f52b68,
+            #df2a61
+        );
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 35px
+        rgba(225,45,100,.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.replay-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(225,45,100,.35);
+}
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+#confettiCanvas {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 5000;
+}
+
+/* =========================================================
+   TOUCH HEARTS
+========================================================= */
+
+.touch-heart {
+    position: fixed;
+
+    z-index: 6000;
+
+    pointer-events: none;
+
+    font-size: 24px;
+
+    animation:
+        touchHeart 900ms
+        ease-out forwards;
+}
+
+@keyframes touchHeart {
+    0% {
+        opacity: 1;
+
+        transform:
+            translate(-50%,-50%)
+            scale(.6);
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translate(-50%,-150px)
+            scale(1.4)
+            rotate(15deg);
+    }
+}
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.toast {
+    position: fixed;
+
+    left: 50%;
+    bottom:
+        max(25px, env(safe-area-inset-bottom));
+
+    transform:
+        translate(-50%, 30px);
+
+    z-index: 7000;
+
+    padding:
+        12px 20px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(50,20,30,.88);
+
+    color: white;
+
+    font-size: 14px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform:
+        translate(-50%,0);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .button-row {
+        gap: 10px;
+    }
+
+    .premium-button,
+    .secondary-button {
+        min-width: 135px;
+        min-height: 56px;
+        padding: 0 18px;
+    }
+
+    .cake-wrap {
+        transform: scale(.88);
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .cake-wrap:hover {
+        transform: scale(.88);
+    }
+
+    .balloon-grid {
+        gap:
+            25px 18px;
+    }
+
+    .balloon-box {
+        height: 170px;
+    }
+
+    .balloon {
+        width: 94px;
+        height: 125px;
+    }
+
+    .reason-icons {
+        gap: 4px;
+    }
+
+    .reason-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .reason-card {
+        padding:
+            30px 20px 28px;
+    }
+
+    .letter-paper {
+        padding:
+            40px 23px 45px;
+    }
+
+    .letter-writing {
+        font-size: 21px;
+    }
+
+    .letter-line {
+        margin-bottom: 27px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+
+}
+
+</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style></head>
+
+<body>
+
+<div id="app">
+
+    <!-- =====================================================
+         PARTICLES
+    ====================================================== -->
+
+    <div id="particleLayer"><span class="particle" style="left: 57.8155%; font-size: 13.4904px; animation-duration: 13.9426s; animation-delay: -10.1608s;">✦</span><span class="particle" style="left: 91.3318%; font-size: 17.1569px; animation-duration: 11.683s; animation-delay: -0.727437s;">♡</span><span class="particle" style="left: 25.5229%; font-size: 21.8678px; animation-duration: 9.44722s; animation-delay: -7.06717s;">✧</span><span class="particle" style="left: 57.6368%; font-size: 15.1347px; animation-duration: 8.42506s; animation-delay: -5.79592s;">✦</span><span class="particle" style="left: 33.2727%; font-size: 18.4925px; animation-duration: 13.8474s; animation-delay: -3.45251s;">•</span><span class="particle" style="left: 0.339124%; font-size: 22.942px; animation-duration: 10.4473s; animation-delay: -13.2426s;">♡</span><span class="particle" style="left: 69.914%; font-size: 22.9313px; animation-duration: 15.6382s; animation-delay: -6.12168s;">✧</span><span class="particle" style="left: 40.2678%; font-size: 14.6957px; animation-duration: 16.9164s; animation-delay: -0.109796s;">♡</span><span class="particle" style="left: 9.36022%; font-size: 11.9086px; animation-duration: 11.3777s; animation-delay: -9.84279s;">✦</span><span class="particle" style="left: 14.1588%; font-size: 18.8112px; animation-duration: 15.2967s; animation-delay: -3.85843s;">♡</span><span class="particle" style="left: 81.6004%; font-size: 20.8336px; animation-duration: 18.8987s; animation-delay: -7.15893s;">♡</span><span class="particle" style="left: 24.3056%; font-size: 15.0712px; animation-duration: 14.281s; animation-delay: -7.57169s;">♡</span><span class="particle" style="left: 14.5845%; font-size: 10.882px; animation-duration: 13.3371s; animation-delay: -4.86197s;">♡</span><span class="particle" style="left: 79.1433%; font-size: 14.214px; animation-duration: 15.343s; animation-delay: -12.1859s;">✧</span><span class="particle" style="left: 63.7084%; font-size: 13.8202px; animation-duration: 10.6027s; animation-delay: -4.50234s;">•</span><span class="particle" style="left: 51.9676%; font-size: 11.1749px; animation-duration: 16.5746s; animation-delay: -8.3026s;">✧</span><span class="particle" style="left: 10.8573%; font-size: 13.2907px; animation-duration: 14.8231s; animation-delay: -1.80867s;">♡</span><span class="particle" style="left: 81.0588%; font-size: 11.9507px; animation-duration: 12.2781s; animation-delay: -11.5092s;">✦</span><span class="particle" style="left: 20.1865%; font-size: 18.9633px; animation-duration: 16.6905s; animation-delay: -6.55671s;">✧</span><span class="particle" style="left: 90.7189%; font-size: 22.3477px; animation-duration: 16.4766s; animation-delay: -12.8616s;">✧</span><span class="particle" style="left: 53.3311%; font-size: 15.4686px; animation-duration: 10.6103s; animation-delay: -1.42053s;">♡</span><span class="particle" style="left: 37.5277%; font-size: 16.0878px; animation-duration: 18.4566s; animation-delay: -4.81353s;">✦</span><span class="particle" style="left: 8.8607%; font-size: 14.2727px; animation-duration: 15.9184s; animation-delay: -5.15173s;">✦</span><span class="particle" style="left: 30.6832%; font-size: 11.7454px; animation-duration: 19.0713s; animation-delay: -2.98751s;">•</span></div>
+
+    <!-- =====================================================
+         CONFETTI
+    ====================================================== -->
+
+    <canvas id="confettiCanvas" width="1366" height="641" style="width: 1366px; height: 641px;"></canvas>
+
+
+    <!-- =====================================================
+         SCREEN 1
+    ====================================================== -->
+
+    <section id="screen1" class="screen premium-bg active">
+
+        <div class="page-content">
+
+            <div class="intro-small">
+                A little surprise made just for you...
+            </div>
+
+            <h1 class="main-title">
+                <span>Happy Birthday</span>
+
+                <span>
+                    Shreya
+                    <span class="heart-glow">❤️</span>
+                </span>
+            </h1>
+
+
+            <!-- CSS CAKE -->
+
+            <div class="cake-wrap">
+
+                <div class="cake-shadow"></div>
+
+                <div class="cake-bottom"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-cream"></div>
+
+                <div class="candle c1"></div>
+
+                <div class="candle c2"></div>
+
+                <div class="flame"></div>
+
+            </div>
+
+
+            <p class="intro-message">
+                I created a little something just for you,
+                Shreya, to celebrate how special you are.
+            </p>
+
+
+            <div class="intro-question">
+                Ready to see it? ✨
+            </div>
+
+
+            <div class="button-row">
+
+                <button id="yesButton" class="premium-button">
+                    Yes 💗
+                </button>
+
+
+                <button id="noButton" class="secondary-button">
+                    No
+                </button>
+
+            </div>
+
+
+            <div id="noMessage" class="no-message">
+                Nice try 😜
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 2 — BALLOONS
+    ====================================================== -->
+
+    <section id="screen2" class="screen premium-bg">
+
+        <div class="page-content">
+
+            <div class="reasons-wrap">
+
+                <h2 class="section-heading">
+                    A little surprise...
+                </h2>
+
+                <p class="section-subtitle">
+                    Tap each balloon, one at a time,
+                    and discover something special. 💗
+                </p>
+
+
+                <div class="balloon-grid">
+
+                    <div class="balloon-box">
+
+                        <div class="balloon blue" data-index="0">
+                            <div class="balloon-string"></div>
+                        </div>
+
+                        <div class="balloon-word" id="word0">
+                            SHREYA
+                        </div>
+
+                    </div>
+
+
+                    <div class="balloon-box">
+
+                        <div class="balloon pink disabled" data-index="1">
+                            <div class="balloon-string"></div>
+                        </div>
+
+                        <div class="balloon-word" id="word1">
+                            MAKES
+                        </div>
+
+                    </div>
+
+
+                    <div class="balloon-box">
+
+                        <div class="balloon green disabled" data-index="2">
+                            <div class="balloon-string"></div>
+                        </div>
+
+                        <div class="balloon-word" id="word2">
+                            LIFE
+                        </div>
+
+                    </div>
+
+
+                    <div class="balloon-box">
+
+                        <div class="balloon purple disabled" data-index="3">
+                            <div class="balloon-string"></div>
+                        </div>
+
+                        <div class="balloon-word" id="word3">
+                            BEAUTIFUL
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="balloonResult" class="balloon-result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 3 — WISH
+    ====================================================== -->
+
+    <section id="screen3" class="screen premium-bg">
+
+        <div class="page-content">
+
+            <div class="wish-area">
+
+                <h2 class="wish-title">
+                    Make a wish, Shreya... 💕
+                </h2>
+
+                <p class="wish-subtitle">
+                    Close your eyes, Shreya,
+                    and hold a special wish
+                    in your heart.
+                </p>
+
+
+                <div class="cake-wrap big-cake">
+
+                    <div class="cake-shadow"></div>
+
+                    <div class="cake-bottom"></div>
+
+                    <div class="cake-middle"></div>
+
+                    <div class="cake-top"></div>
+
+                    <div class="cake-cream"></div>
+
+                    <div class="candle c1"></div>
+
+                    <div class="candle c2"></div>
+
+                    <div class="flame"></div>
+
+                </div>
+
+
+                <button id="wishContinue" class="continue-button">
+                    Continue
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 4 — REASONS
+    ====================================================== -->
+
+    <section id="screen4" class="screen premium-bg">
+
+        <div class="page-content">
+
+            <div class="reasons-wrap">
+
+                <h2 class="section-heading">
+                    For Shreya,
+                    who brings beauty
+                    to my world 🌷
+                </h2>
+
+                <p class="section-subtitle">
+                    Each button represents a reason
+                    why you are so special to me.
+                </p>
+
+
+                <div class="reason-icons">
+
+                    <button class="reason-icon selected" data-reason="0">
+                        💖
+                    </button>
+
+                    <button class="reason-icon" data-reason="1">
+                        ✨
+                    </button>
+
+                    <button class="reason-icon" data-reason="2">
+                        😊
+                    </button>
+
+                    <button class="reason-icon" data-reason="3">
+                        ⭐
+                    </button>
+
+                </div>
+
+
+                <div id="reasonCard" class="reason-card">
+
+                    <h3 id="reasonTitle">
+                        💖 Your Warm Heart
+                    </h3>
+
+                    <p id="reasonText" class="reason-change">
+                        Your infinite kindness,
+                        gentle nature, and the deep
+                        warmth you, Shreya, bring into
+                        my life every single day.
+                    </p>
+
+                </div>
+
+
+                <div class="bouquet">
+                    🌷💐🌷
+                </div>
+
+
+                <button id="reasonsContinue" class="continue-button reasons-continue">
+                    Continue
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 5 — ENVELOPE
+    ====================================================== -->
+
+    <section id="screen5" class="screen premium-bg">
+
+        <div class="page-content letter-intro">
+
+            <h2 class="letter-title">
+                A letter carrying all my
+                love for Shreya...
+            </h2>
+
+
+            <div id="envelope" class="envelope" role="button" tabindex="0" aria-label="Open birthday letter">
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-paper"></div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-heart">
+                    ♥
+                </div>
+
+            </div>
+
+
+            <button id="tapOpen" class="tap-open">
+                Tap to open
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 6 — LETTER
+    ====================================================== -->
+
+    <section id="screen6" class="screen letter-screen-bg">
+
+        <div class="letter-page">
+
+            <h2 class="letter-page-title">
+                A letter carrying all my
+                love for Shreya...
+            </h2>
+
+
+            <div id="letterMiniEnvelope" class="letter-envelope-mini">
+
+                <div class="mini-flap"></div>
+
+                <div class="mini-heart">
+                    ♥
+                </div>
+
+            </div>
+
+
+            <div id="letterPaper" class="letter-paper">
+
+                <div class="letter-seal">
+                    ♥
+                </div>
+
+
+                <div id="letterWriting" class="letter-writing">
+
+                    <p class="letter-line greeting">
+                        To my favorite person, Shreya 💗
+                    </p>
+
+                    <p class="letter-line birthday">
+                        Happy Birthday Shreya ❤️🎂
+                    </p>
+
+                    <p class="letter-line">
+                        You, Shreya, are the most beautiful
+                        part of my world—the comfort in my
+                        quiet moments, and the joy in my
+                        everyday.
+                    </p>
+
+                    <p class="letter-line">
+                        Every single day with you feels like
+                        a gift, and I am so incredibly lucky
+                        to walk beside someone as kind,
+                        loving, and special as you. 🌸✨
+                    </p>
+
+                    <p class="letter-line">
+                        On your birthday, Shreya, I wish you
+                        all the laughter, warmth, and peace
+                        that you bring into my life.
+                    </p>
+
+                    <p class="letter-line">
+                        I hope the days ahead are filled with
+                        happiness, beautiful moments, and
+                        dreams that come true. 🌎
+                    </p>
+
+                    <p class="letter-line">
+                        Thank you for loving me, Shreya,
+                        for being my safe space, and for
+                        making the world a brighter place
+                        just by being yourself. 🌹🥰
+                    </p>
+
+                    <p class="letter-line">
+                        No matter where life takes us,
+                        Shreya, I promise to always support
+                        you through everything and to always
+                        wish the very best for you with every
+                        passing day. 💗
+                    </p>
+
+                    <p class="letter-line final-line">
+                        Happy Birthday, sweetheart. I hope
+                        your smile never fades and that every
+                        beautiful dream in your heart comes
+                        true. 💕
+                    </p>
+
+                    <p class="letter-line signature">
+                        With lots of love,<br>
+                        Always 💗
+                    </p>
+
+                </div>
+
+
+                <span id="typingCursor" class="typing-cursor">
+                    |
+                </span>
+
+            </div>
+
+
+            <button id="letterContinue" class="continue-button letter-continue">
+                Continue
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCREEN 7 — FINAL
+    ====================================================== -->
+
+    <section id="screen7" class="screen final-screen">
+
+        <div class="final-content">
+
+            <div class="final-sparkles">
+                ✨ 💗 ✨
+            </div>
+
+
+            <div class="final-heart">
+                💖
+            </div>
+
+
+            <h1>
+                Happy Birthday,
+                Shreya!
+            </h1>
+
+
+            <p class="final-message">
+                May your life always be filled
+                with happiness, laughter,
+                beautiful moments and endless
+                reasons to smile.
+            </p>
+
+
+            <p class="final-small">
+                You are truly special. 🌷
+            </p>
+
+
+            <div class="final-divider">
+                ♡
+            </div>
+
+
+            <button id="replayButton" class="replay-button">
+                ↻ &nbsp; Replay Surprise
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<div id="toast" class="toast">
+</div>
+
+
+<script>
+
+/* =========================================================
+   BASIC ELEMENTS
+========================================================= */
+
+const screens = [
+    "screen1",
+    "screen2",
+    "screen3",
+    "screen4",
+    "screen5",
+    "screen6",
+    "screen7"
+];
+
+let currentScreen = 0;
+
+const toast = document.getElementById("toast");
+
+
+/* =========================================================
+   SCREEN NAVIGATION
+========================================================= */
+
+function showScreen(index) {
+
+    screens.forEach((id, i) => {
+
+        const screen =
+            document.getElementById(id);
+
+        screen.classList.toggle(
+            "active",
+            i === index
+        );
+
+    });
+
+    currentScreen = index;
+
+    /*
+     * Scroll the new screen to top
+     */
+
+    const active =
+        document.getElementById(
+            screens[index]
+        );
+
+    if (active) {
+        active.scrollTop = 0;
+    }
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+let toastTimer;
+
+function showToast(message) {
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    clearTimeout(toastTimer);
+
+    toastTimer =
+        setTimeout(() => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        }, 1500);
+}
+
+
+/* =========================================================
+   FLOATING PARTICLES
+========================================================= */
+
+const particleLayer =
+    document.getElementById(
+        "particleLayer"
+    );
+
+const particleSymbols = [
+    "♡",
+    "✦",
+    "•",
+    "✧",
+    "♡"
+];
+
+for (
+    let i = 0;
+    i < 24;
+    i++
+) {
+
+    const particle =
+        document.createElement("span");
+
+    particle.className =
+        "particle";
+
+    particle.textContent =
+        particleSymbols[
+            Math.floor(
+                Math.random() *
+                particleSymbols.length
+            )
+        ];
+
+    particle.style.left =
+        Math.random() * 100 + "%";
+
+    particle.style.fontSize =
+        (10 + Math.random() * 13) + "px";
+
+    particle.style.animationDuration =
+        (8 + Math.random() * 12) + "s";
+
+    particle.style.animationDelay =
+        (-Math.random() * 15) + "s";
+
+    particleLayer.appendChild(
+        particle
+    );
+}
+
+
+/* =========================================================
+   SOFT WEB AUDIO
+   Starts only after user interaction.
+========================================================= */
+
+let audioStarted = false;
+let audioContext = null;
+
+function startAmbientAudio() {
+
+    if (audioStarted) return;
+
+    audioStarted = true;
+
+    try {
+
+        audioContext =
+            new (
+                window.AudioContext ||
+                window.webkitAudioContext
+            )();
+
+        const master =
+            audioContext.createGain();
+
+        master.gain.value = 0.035;
+
+        master.connect(
+            audioContext.destination
+        );
+
+
+        /*
+         * Very soft generated ambient tones.
+         * No external MP3 required.
+         */
+
+        const notes = [
+            261.63,
+            329.63,
+            392.00,
+            329.63
+        ];
+
+        let noteIndex = 0;
+
+        function playNote() {
+
+            if (
+                !audioContext ||
+                audioContext.state === "closed"
+            ) {
+                return;
+            }
+
+            const oscillator =
+                audioContext.createOscillator();
+
+            const gain =
+                audioContext.createGain();
+
+            oscillator.type =
+                "sine";
+
+            oscillator.frequency.value =
+                notes[noteIndex];
+
+            const now =
+                audioContext.currentTime;
+
+            gain.gain.setValueAtTime(
+                0,
+                now
+            );
+
+            gain.gain.linearRampToValueAtTime(
+                0.13,
+                now + .08
+            );
+
+            gain.gain.exponentialRampToValueAtTime(
+                0.001,
+                now + 2.4
+            );
+
+            oscillator.connect(gain);
+            gain.connect(master);
+
+            oscillator.start(now);
+            oscillator.stop(now + 2.5);
+
+            noteIndex =
+                (noteIndex + 1) %
+                notes.length;
+
+        }
+
+        playNote();
+
+        setInterval(
+            playNote,
+            2200
+        );
+
+    } catch (error) {
+
+        console.log(
+            "Ambient audio unavailable."
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   CONFETTI CANVAS
+========================================================= */
+
+const canvas =
+    document.getElementById(
+        "confettiCanvas"
+    );
+
+const ctx =
+    canvas.getContext("2d");
+
+let confettiParticles = [];
+
+function resizeCanvas() {
+
+    const dpr =
+        Math.min(
+            window.devicePixelRatio || 1,
+            2
+        );
+
+    canvas.width =
+        window.innerWidth * dpr;
+
+    canvas.height =
+        window.innerHeight * dpr;
+
+    canvas.style.width =
+        window.innerWidth + "px";
+
+    canvas.style.height =
+        window.innerHeight + "px";
+
+    ctx.setTransform(
+        dpr,
+        0,
+        0,
+        dpr,
+        0,
+        0
+    );
+
+}
+
+resizeCanvas();
+
+window.addEventListener(
+    "resize",
+    resizeCanvas
+);
+
+
+function launchConfetti(
+    amount = 180
+) {
+
+    const colors = [
+        "#f52f6a",
+        "#ff8eb0",
+        "#ffd27d",
+        "#c79ae8",
+        "#79c9f5",
+        "#8ed7a2"
+    ];
+
+    confettiParticles = [];
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        confettiParticles.push({
+
+            x:
+                window.innerWidth / 2 +
+                (Math.random() - .5) * 180,
+
+            y:
+                window.innerHeight * .48,
+
+            vx:
+                (Math.random() - .5) * 13,
+
+            vy:
+                -(6 + Math.random() * 11),
+
+            gravity:
+                .18 +
+                Math.random() * .08,
+
+            drag:
+                .985,
+
+            size:
+                5 +
+                Math.random() * 8,
+
+            rotation:
+                Math.random() * Math.PI,
+
+            rotationSpeed:
+                (Math.random() - .5) * .25,
+
+            color:
+                colors[
+                    Math.floor(
+                        Math.random() *
+                        colors.length
+                    )
+                ],
+
+            life:
+                100 +
+                Math.random() * 80
+
+        });
+
+    }
+
+    animateConfetti();
+}
+
+
+let confettiRunning = false;
+
+function animateConfetti() {
+
+    if (confettiRunning) return;
+
+    confettiRunning = true;
+
+    function frame() {
+
+        ctx.clearRect(
+            0,
+            0,
+            window.innerWidth,
+            window.innerHeight
+        );
+
+        let alive = false;
+
+        for (
+            const p of confettiParticles
+        ) {
+
+            p.vx *= p.drag;
+
+            p.vy += p.gravity;
+
+            p.x += p.vx;
+            p.y += p.vy;
+
+            p.rotation +=
+                p.rotationSpeed;
+
+            p.life -= 1;
+
+            if (
+                p.life > 0 &&
+                p.y < window.innerHeight + 80
+            ) {
+
+                alive = true;
+
+                ctx.save();
+
+                ctx.translate(
+                    p.x,
+                    p.y
+                );
+
+                ctx.rotate(
+                    p.rotation
+                );
+
+                ctx.fillStyle =
+                    p.color;
+
+                ctx.fillRect(
+                    -p.size / 2,
+                    -p.size / 2,
+                    p.size,
+                    p.size * 1.6
+                );
+
+                ctx.restore();
+
+            }
+
+        }
+
+        if (alive) {
+
+            requestAnimationFrame(
+                frame
+            );
+
+        } else {
+
+            confettiRunning = false;
+
+            ctx.clearRect(
+                0,
+                0,
+                window.innerWidth,
+                window.innerHeight
+            );
+
+        }
+
+    }
+
+    requestAnimationFrame(frame);
+
+}
+
+
+/* =========================================================
+   YES BUTTON
+========================================================= */
+
+document
+    .getElementById("yesButton")
+    .addEventListener(
+        "click",
+        () => {
+
+            startAmbientAudio();
+
+            launchConfetti(220);
+
+            setTimeout(
+                () => {
+
+                    showScreen(1);
+
+                },
+                850
+            );
+
+        }
+    );
+
+
+/* =========================================================
+   NO BUTTON — ESCAPE
+========================================================= */
+
+const noButton =
+    document.getElementById(
+        "noButton"
+    );
+
+const noMessage =
+    document.getElementById(
+        "noMessage"
+    );
+
+let noAttempts = 0;
+
+function moveNoButton() {
+
+    noAttempts++;
+
+    noMessage.textContent =
+        noAttempts === 1
+            ? "Nice try 😜"
+            : noAttempts === 2
+                ? "You can't catch me 😂"
+                : noAttempts === 3
+                    ? "Just press YES 💗"
+                    : "Okay okay... YES is waiting 😭💗";
+
+    noMessage.classList.add(
+        "show"
+    );
+
+
+    const maxX =
+        Math.min(
+            120,
+            window.innerWidth * .28
+        );
+
+    const maxY =
+        Math.min(
+            90,
+            window.innerHeight * .08
+        );
+
+    const x =
+        (Math.random() - .5) *
+        maxX * 2;
+
+    const y =
+        (Math.random() - .5) *
+        maxY * 2;
+
+
+    noButton.style.transform =
+        `translate(${x}px, ${y}px)
+         rotate(${(Math.random()-.5)*10}deg)`;
+
+}
+
+noButton.addEventListener(
+    "mouseenter",
+    moveNoButton
+);
+
+noButton.addEventListener(
+    "touchstart",
+    function(event) {
+
+        event.preventDefault();
+
+        moveNoButton();
+
+    },
+    {
+        passive: false
+    }
+);
+
+noButton.addEventListener(
+    "click",
+    moveNoButton
+);
+
+
+/* =========================================================
+   BALLOONS
+========================================================= */
+
+const balloons =
+    Array.from(
+        document.querySelectorAll(
+            ".balloon"
+        )
+    );
+
+const words =
+    Array.from(
+        document.querySelectorAll(
+            ".balloon-word"
+        )
+    );
+
+const balloonResult =
+    document.getElementById(
+        "balloonResult"
+    );
+
+let balloonStep = 0;
+
+const balloonPhrase = [
+    "SHREYA",
+    "MAKES",
+    "LIFE",
+    "BEAUTIFUL"
+];
+
+balloons.forEach(
+    (balloon, index) => {
+
+        balloon.addEventListener(
+            "click",
+            () => {
+
+                if (
+                    index !== balloonStep
+                ) {
+
+                    showToast(
+                        "Tap the balloons one at a time 💗"
+                    );
+
+                    return;
+
+                }
+
+
+                balloon.classList.remove(
+                    "disabled"
+                );
+
+                balloon.classList.add(
+                    "popped"
+                );
+
+
+                setTimeout(
+                    () => {
+
+                        words[index]
+                            .classList.add(
+                                "show"
+                            );
+
+                    },
+                    180
+                );
+
+
+                balloonStep++;
+
+
+                if (
+                    balloonStep <
+                    balloons.length
+                ) {
+
+                    balloons[
+                        balloonStep
+                    ].classList.remove(
+                        "disabled"
+                    );
+
+                } else {
+
+                    setTimeout(
+                        () => {
+
+                            balloonResult.textContent =
+                                "SHREYA MAKES LIFE BEAUTIFUL ✨";
+
+                            launchConfetti(100);
+
+
+                            setTimeout(
+                                () => {
+
+                                    showScreen(2);
+
+                                },
+                                1900
+                            );
+
+                        },
+                        500
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   WISH CONTINUE
+========================================================= */
+
+document
+    .getElementById("wishContinue")
+    .addEventListener(
+        "click",
+        () => {
+
+            launchConfetti(80);
+
+            showScreen(3);
+
+        }
+    );
+
+
+/* =========================================================
+   REASONS
+========================================================= */
+
+const reasonButtons =
+    Array.from(
+        document.querySelectorAll(
+            ".reason-icon"
+        )
+    );
+
+const reasonTitle =
+    document.getElementById(
+        "reasonTitle"
+    );
+
+const reasonText =
+    document.getElementById(
+        "reasonText"
+    );
+
+
+const reasons = [
+
+    {
+        title:
+            "💖 Your Warm Heart",
+
+        text:
+            "Your infinite kindness, gentle nature, and the deep warmth you, Shreya, bring into my life every single day."
+    },
+
+    {
+        title:
+            "✨ Your Beautiful Smile",
+
+        text:
+            "How your presence, Shreya, brightens up my days, making everything feel a little more magical and beautiful."
+    },
+
+    {
+        title:
+            "😊 Your Kind Soul",
+
+        text:
+            "The silly jokes, the endless laughs, and the little moments that somehow make every day better."
+    },
+
+    {
+        title:
+            "⭐ Your Special Presence",
+
+        text:
+            "You are very special, Shreya. Your presence alone can make an ordinary moment feel unforgettable."
+    }
+
+];
+
+
+reasonButtons.forEach(
+    (button, index) => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                reasonButtons.forEach(
+                    b =>
+                        b.classList.remove(
+                            "selected"
+                        )
+                );
+
+                button.classList.add(
+                    "selected"
+                );
+
+
+                reasonText.classList.remove(
+                    "reason-change"
+                );
+
+                /*
+                 * Restart animation
+                 */
+
+                void reasonText.offsetWidth;
+
+
+                reasonTitle.textContent =
+                    reasons[index].title;
+
+                reasonText.textContent =
+                    reasons[index].text;
+
+                reasonText.classList.add(
+                    "reason-change"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   REASONS CONTINUE
+========================================================= */
+
+document
+    .getElementById(
+        "reasonsContinue"
+    )
+    .addEventListener(
+        "click",
+        () => {
+
+            showScreen(4);
+
+        }
+    );
+
+
+/* =========================================================
+   ENVELOPE
+========================================================= */
+
+const envelope =
+    document.getElementById(
+        "envelope"
+    );
+
+const tapOpen =
+    document.getElementById(
+        "tapOpen"
+    );
+
+let envelopeOpened = false;
+
+
+function openEnvelope() {
+
+    if (envelopeOpened) return;
+
+    envelopeOpened = true;
+
+    startAmbientAudio();
+
+    envelope.classList.add(
+        "open"
+    );
+
+    tapOpen.textContent =
+        "Opening your letter... 💗";
+
+
+    setTimeout(
+        () => {
+
+            showScreen(5);
+
+            startLetterAnimation();
+
+        },
+        1000
+    );
+
+}
+
+
+envelope.addEventListener(
+    "click",
+    openEnvelope
+);
+
+tapOpen.addEventListener(
+    "click",
+    openEnvelope
+);
+
+envelope.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Enter" ||
+            event.key === " "
+        ) {
+
+            event.preventDefault();
+
+            openEnvelope();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   LETTER ANIMATION
+========================================================= */
+
+let letterStarted = false;
+
+function startLetterAnimation() {
+
+    if (letterStarted) return;
+
+    letterStarted = true;
+
+
+    const screen6 =
+        document.getElementById(
+            "screen6"
+        );
+
+    const miniEnvelope =
+        document.getElementById(
+            "letterMiniEnvelope"
+        );
+
+    const paper =
+        document.getElementById(
+            "letterPaper"
+        );
+
+    /*
+     * Envelope opens first.
+     */
+
+    setTimeout(
+        () => {
+
+            screen6.classList.add(
+                "letter-coming"
+            );
+
+            miniEnvelope.classList.add(
+                "letter-coming"
+            );
+
+        },
+        150
+    );
+
+
+    /*
+     * Paper comes out.
+     */
+
+    setTimeout(
+        () => {
+
+            screen6.classList.add(
+                "letter-opened"
+            );
+
+        },
+        850
+    );
+
+
+    /*
+     * Typewriter begins.
+     */
+
+    setTimeout(
+        () => {
+
+            startTypewriter();
+
+        },
+        1700
+    );
+
+}
+
+
+/* =========================================================
+   TYPEWRITER
+========================================================= */
+
+function startTypewriter() {
+
+    const container =
+        document.getElementById(
+            "letterWriting"
+        );
+
+    const cursor =
+        document.getElementById(
+            "typingCursor"
+        );
+
+    const continueButton =
+        document.getElementById(
+            "letterContinue"
+        );
+
+    const lines =
+        Array.from(
+            container.querySelectorAll(
+                ".letter-line"
+            )
+        );
+
+
+    lines.forEach(
+        line => {
+
+            line.dataset.fullText =
+                line.textContent
+                    .replace(/\s+/g, " ")
+                    .trim();
+
+            line.textContent = "";
+
+        }
+    );
+
+
+    let lineIndex = 0;
+
+
+    function typeLine() {
+
+        if (
+            lineIndex >=
+            lines.length
+        ) {
+
+            cursor.classList.add(
+                "finished"
+            );
+
+
+            setTimeout(
+                () => {
+
+                    continueButton.classList.add(
+                        "show"
+                    );
+
+                },
+                600
+            );
+
+            return;
+
+        }
+
+
+        const line =
+            lines[lineIndex];
+
+        const text =
+            line.dataset.fullText;
+
+        let charIndex = 0;
+
+
+        function typeCharacter() {
+
+            if (
+                charIndex <
+                text.length
+            ) {
+
+                line.textContent +=
+                    text.charAt(
+                        charIndex
+                    );
+
+                charIndex++;
+
+
+                /*
+                 * Natural typing variation
+                 */
+
+                const speed =
+                    19 +
+                    Math.random() * 19;
+
+
+                setTimeout(
+                    typeCharacter,
+                    speed
+                );
+
+            } else {
+
+                lineIndex++;
+
+
+                setTimeout(
+                    typeLine,
+                    380
+                );
+
+            }
+
+        }
+
+
+        typeCharacter();
+
+    }
+
+
+    typeLine();
+
+}
+
+
+/* =========================================================
+   LETTER CONTINUE
+========================================================= */
+
+document
+    .getElementById(
+        "letterContinue"
+    )
+    .addEventListener(
+        "click",
+        () => {
+
+            showScreen(6);
+
+            launchConfetti(220);
+
+        }
+    );
+
+
+/* =========================================================
+   REPLAY
+========================================================= */
+
+document
+    .getElementById(
+        "replayButton"
+    )
+    .addEventListener(
+        "click",
+        () => {
+
+            /*
+             * Full reset.
+             */
+
+            window.location.reload();
+
+        }
+    );
+
+
+/* =========================================================
+   TOUCH HEART EFFECT
+========================================================= */
+
+document.addEventListener(
+    "pointerdown",
+    event => {
+
+        /*
+         * Don't create hearts when pressing
+         * buttons repeatedly.
+         */
+
+        if (
+            event.target.closest("button") ||
+            event.target.closest(".balloon") ||
+            event.target.closest(".envelope")
+        ) {
+            return;
+        }
+
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "touch-heart";
+
+        heart.textContent =
+            Math.random() > .5
+                ? "💗"
+                : "♡";
+
+        heart.style.left =
+            event.clientX + "px";
+
+        heart.style.top =
+            event.clientY + "px";
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(
+            () => {
+                heart.remove();
+            },
+            950
+        );
+
+    }
+);
+
+
+/* =========================================================
+   START AUDIO ON FIRST INTERACTION
+========================================================= */
+
+document.addEventListener(
+    "pointerdown",
+    () => {
+
+        startAmbientAudio();
+
+    },
+    {
+        once: true
+    }
+);
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+showScreen(0);
+
+</script>
+
+
+</body></html>
